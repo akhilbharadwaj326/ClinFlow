@@ -13,7 +13,7 @@ class Settings(BaseSettings):
     APP_SECRET_KEY: str = "change-me"
 
     class Config:
-        env_file = ".env"
+        env_file = [".env", "../.env"]
 
 
 settings = Settings()
