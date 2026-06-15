@@ -1,0 +1,64 @@
+# Environments & Secrets
+.env
+.env.*
+.env.example
+env.example
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+
+# Keys, Certificates, and Secret Files
+*.pem
+*.key
+*.cert
+*.crt
+*.p12
+secrets.json
+client_secret.json
+firebase-adminsdk.json
+credentials.json
+service-account.json
+
+# Python / FastAPI (Backend)
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/
+.mypy_cache/
+
+# Node / React (Frontend)
+node_modules/
+npm-debug.log
+yarn-error.log
+yarn-debug.log
+.pnp
+.pnp.js
+coverage/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDEs and Editors
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Firebase
+.firebase/
+firebase-debug.log
+firebase-debug.*.log
