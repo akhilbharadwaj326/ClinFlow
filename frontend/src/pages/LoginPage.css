@@ -22,13 +22,12 @@
   text-align: center;
   margin-bottom: 32px;
 }
-.logo-icon { font-size: 3rem; }
-.logo-title {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #fff;
-  margin: 8px 0 4px;
-  letter-spacing: -0.5px;
+.logo-img {
+  width: 180px;
+  height: auto;
+  display: block;
+  margin: 0 auto 10px;
+  filter: drop-shadow(0 4px 16px rgba(59,130,246,0.3));
 }
 .logo-subtitle { color: #94a3b8; font-size: 0.9rem; }
 

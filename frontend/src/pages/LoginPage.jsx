@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useAuth } from '../contexts/AuthContext';
 import { useNavigate } from 'react-router-dom';
+import clinflowLogo from '../assets/clinflow-logo.png';
 import './LoginPage.css';
 
 export default function LoginPage() {
@@ -34,8 +35,7 @@ export default function LoginPage() {
       <div className="login-card">
         {/* Logo */}
         <div className="login-logo">
-          <span className="logo-icon">🩺</span>
-          <h1 className="logo-title">ClinFlow</h1>
+          <img src={clinflowLogo} alt="ClinFlow Logo" className="logo-img" />
           <p className="logo-subtitle">Clinical Continuity of Care</p>
         </div>
 

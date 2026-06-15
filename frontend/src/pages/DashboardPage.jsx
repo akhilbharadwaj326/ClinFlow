@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
 import apiClient from '../lib/apiClient';
+import clinflowLogo from '../assets/clinflow-logo.png';
 import './DashboardPage.css';
 
 export default function DashboardPage() {
@@ -27,8 +28,7 @@ export default function DashboardPage() {
       {/* Sidebar */}
       <aside className="sidebar">
         <div className="sidebar-logo">
-          <span>🩺</span>
-          <span>ClinFlow</span>
+          <img src={clinflowLogo} alt="ClinFlow" className="sidebar-logo-img" />
         </div>
         <nav className="sidebar-nav">
           <Link to="/dashboard" className="nav-item active">📋 Patients</Link>
