@@ -12,6 +12,10 @@ class Settings(BaseSettings):
     APP_ENV: str = "development"
     APP_SECRET_KEY: str = "change-me"
 
+    # Telegram Bot (optional — leave blank to disable Telegram ingestion)
+    TELEGRAM_BOT_TOKEN: str = ""
+    TELEGRAM_WEBHOOK_SECRET: str = ""  # Secret token to verify Telegram requests
+
     class Config:
         env_file = ".env"
 

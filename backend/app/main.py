@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from app.api import patients, documents, notes
+from app.api import patients, documents, notes, telegram
 
 app = FastAPI(
     title="ClinFlow API",
@@ -22,6 +22,7 @@ app.add_middleware(
 app.include_router(patients.router, prefix="/api")
 app.include_router(documents.router, prefix="/api")
 app.include_router(notes.router, prefix="/api")
+app.include_router(telegram.router)
 
 
 @app.get("/", tags=["Health"])
